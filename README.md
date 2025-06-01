@@ -1,13 +1,40 @@
-# Simulation NBP (N-body Problem)
+# N-Body Problem (NBP) Simulation
 
 ## Description
 
-Ce projet contient deux scripts MATLAB qui simulent un système de particules en interaction gravitationnelle dans le plan et l'espace.
+This project provides MATLAB scripts for simulating the gravitational interaction of multiple particles in both 2D and 3D environments. These simulations visually represent the trajectories of the particles and their collective center of mass.
 
-- **NBP_2D.m** : Simulation en 2D.
-- **NBP_3D.m** : Simulation en 3D.
+## Features
 
-## Fichiers
+* **2D Simulation (`NBP_2D.m`)**: Simulates the movement of `Np` particles in a 2D plane under gravitational forces. The script animates the trajectories of each particle and the system's center of mass.
+* **3D Simulation (`NBP_3D.m`)**: Extends the simulation to three dimensions, allowing for the visualization of `Np` particles moving in 3D space. Similar to the 2D version, it animates individual particle trajectories and the overall center of mass.
 
-- **NBP_2D.m** : Simule le mouvement de Np particules dans un plan. Les trajectoires et le centre de masse sont animés.
-- **NBP_3D.m** : Simule le mouvement de Np particules dans l'espace, avec visualisation des trajectoires et du centre de masse.
+## Files
+
+* **`NBP_2D.m`**: MATLAB script for the 2D N-body simulation.
+* **`NBP_3D.m`**: MATLAB script for the 3D N-body simulation.
+
+## How to Use
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/amafella/N_body_problem.git
+    cd NBP-Simulation
+    ```
+2.  **Open MATLAB:** Launch MATLAB.
+3.  **Run the scripts:**
+    * To run the 2D simulation, open `NBP_2D.m` and press `Run`.
+    * To run the 3D simulation, open `NBP_3D.m` and press `Run`.
+
+## Customization
+
+Both scripts allow for easy modification of simulation parameters, including:
+
+* `ht`: Time step for the simulation.
+* `Nt`: Total number of time steps.
+* `Np`: Number of particles in the simulation.
+* `G`: Gravitational constant.
+* `Masse`: Masses of individual particles.
+* Initial positions (`x`, `y`, `z`) and velocities (`vx`, `vy`, `vz`) of the particles.
+
+Feel free to experiment with these parameters to observe different N-body system behaviors.
